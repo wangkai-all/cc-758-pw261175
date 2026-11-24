@@ -1,17 +1,19 @@
-
 .env
 .env.*
 !.env.example
 node_modules/
 .venv/
 __pycache__/
+*.pyc
 .claude/
 .cc-workbench/
 .next/
 .nuxt/
 target/
 dist/
+web-dist/
 coverage/
+.pytest_cache/
 playwright-report/
 test-results/
 *.log
@@ -32,3 +34,7 @@ test-results/
 *.sqlite3-shm
 *.sqlite3-journal
 !*.traineddata.gz
+# Generated run artefacts (the seed input data/generated/season.json is kept)
+data/runs/
+data/boards/
+data/results.json
